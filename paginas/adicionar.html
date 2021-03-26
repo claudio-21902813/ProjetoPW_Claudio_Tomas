@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Noticas Tec</title>
     <link rel="shortcut icon" type="image/x-icon" href="imagens/icon.svg" />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <meta name="description" content="Tec News">
     <meta name="keywords" content="HTML,Web,Noticias">
     <meta name="author" content="Claudio Caetano">
@@ -20,35 +20,62 @@
 
     <header>
         <figure>
-            <img src="/imagens/header_imagem.svg">
+            <img src="../imagens/header_imagem.svg">
         </figure>
         <nav>
             <ul>
-                <li><a href="google.pt">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li>
-                    <a href="google.pt">Categorias </a>
+                    <a>Categorias </a> <!-- Ver o que meter -->
                     <ul>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Linux</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">Windows</a></li>
+                        <li><a href="appleNews.html">Apple</a></li>
+                        <li><a href="linuxNews.html">Linux</a></li>
+                        <li><a href="androidNews.html">Android</a></li>
+                        <li><a href="windowsNews.html">Windows</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="google.pt"> Outros </a>
+                    <a> Outros </a>
                     <ul>
-                        <li><a href="#">Comentario</a></li>
-                        <li><a href="#">Sugerir Noticia</a></li>
+                        <li><a href="comentario.html">Comentario</a></li>
+                        <li><a href="adicionar.html">Sugerir Noticia</a></li>
                     </ul>
                 </li>
-                <li><a href="google.pt">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main style="padding-top: 70px;">
         <section>
             <h1>Adicionar Noticia</h1>
+            <form>
+                <fieldset style="text-align: left;">
+                    <legend><h3>Dados Pessoais</h3></legend><br>
+                    <label id="pright">Nome :</label>
+                    <input type="text" name="nome" size="20" autocomplete="off" required autofocus></p><br>
+                    <label id="pright">Email :</label> 
+                    <input type="email" name="email" autocomplete="off" autofocus></p><br>
+                    </fieldset><br><br>
+                <fieldset style="text-align: left;">
+                    <legend><h3>Campo relativo á noticia</h3></legend><br>
+                        <label id="pright"> Tipo : </label>
+                        <input type="radio" name="windowns" id="wind">
+                        <label for="wind" id="pright">Windows</label>
+                        <input type="radio" name="linux" id="linux">
+                        <label for="linux" id="pright">Linux</label>
+                        <input type="radio" name="android" id="android">
+                        <label for="android" id="pright">Android</label>
+                        <input type="radio" name="apple" id="apple">
+                        <label for="apple" id="pright">Apple</label><br><br>
+                        <label id="pright">Suporte Visual</label>
+                        <input type="url" name="url" placeholder ="Link(Url)"><br><br>
+                        <h4 style="text-align: left;">Sinopse :</h4><br>
+                        <textarea name="texto" rows="10" placeholder="Dê um pequeno resumo da noticia" cols="100" style="width:600px; height:100px;background-color: rgb(228, 220, 220);"></textarea>
+                        <br><br><h4 style="text-align: left;">Descreva a em 500 palavras noticia :</h4><br>
+                        <textarea name="texto" maxlength="500" rows="10" placeholder="Seja o mais claro e simples possivel" cols="100" style="width:600px; height:150px;background-color: rgb(228, 220, 220);"></textarea>
+                </fieldset>
+            </form>
         </section>
     </main>
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Noticas Tec</title>
     <link rel="shortcut icon" type="image/x-icon" href="imagens/icon.svg" />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <meta name="description" content="Tec News">
     <meta name="keywords" content="HTML,Web,Noticias">
     <meta name="author" content="Claudio Caetano">
@@ -20,35 +20,81 @@
 
     <header>
         <figure>
-            <img src="/imagens/header_imagem.svg">
+            <img src="../imagens/header_imagem.svg">
         </figure>
         <nav>
             <ul>
-                <li><a href="google.pt">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li>
-                    <a href="google.pt">Categorias </a>
+                    <a>Categorias </a> <!-- Ver o que meter -->
                     <ul>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Linux</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">Windows</a></li>
+                        <li><a href="appleNews.html">Apple</a></li>
+                        <li><a href="linuxNews.html">Linux</a></li>
+                        <li><a href="androidNews.html">Android</a></li>
+                        <li><a href="windowsNews.html">Windows</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="google.pt"> Outros </a>
+                    <a> Outros </a>
                     <ul>
-                        <li><a href="#">Comentario</a></li>
-                        <li><a href="#">Sugerir Noticia</a></li>
+                        <li><a href="comentario.html">Comentario</a></li>
+                        <li><a href="adicionar.html">Sugerir Noticia</a></li>
                     </ul>
                 </li>
-                <li><a href="google.pt">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main style="padding-top: 70px;">
         <section>
-            <h2>Formulario</h2>
+            <!-- Depois pensar em meter mais perguntas para uma avaliação melhor do site -->
+            <!-- Estilizar melhor...Dedicar mais a isto -->
+            <h1>Comente e deixe-nos felizes!</h1><br>
+            <h3>Dê-nos um comentário sobre o nosso Website de forma a poder-mos sempre melhorar e dar mais prazer de se ver</h3><br>
+            <form oninput="cont.value=parseInt(conteudo.value)">
+                <fieldset style="text-align: left;">
+                    <legend><h2>Dê a sua opinião sobre o Website</h2></legend>
+                    <br>
+                        <label id="pright">Estética :</label>
+                        <input type="radio" name="mtfeio" id="pright">
+                        <label for="mtfeio" id="pright">1</label>
+                        <input type="radio" name="feio" id="pright">
+                        <label for="feio" id="pright">2</label>
+                        <input type="radio" name="suf" id="pright">
+                        <label for="suf" id="pright">3</label>
+                        <input type="radio" name="bom" id="pright">
+                        <label for="bom" id="pright">4</label>
+                        <input type="radio" name="mtbom" id="pright">
+                        <label for="mtbom" id="pright">5</label><br><br>
+                        <label id="pright">Conteúdo :</label>
+                        <input type="range" name="conteudo" min="0" max="10">
+                        <output name="cont">5</output><br><br>
+                        <h4 style="text-align: left;">O site teve em conta as 10 heurísticas de Nielsen? (multi-opções) :</h4><br>
+                        <input type="checkbox" name="visi">
+                        <label for="visi">Visibilidade do status do sistema</label><br>
+                        <input type="checkbox" name="corr" id="amplitude">
+                        <label for="corr">Correspondência entre o sistema e o mundo real</label><br>
+                        <input type="checkbox" name="liberdade" id="logic">
+                        <label for="liberdade">Liberdade e controle do usuário</label><br>
+                        <input type="checkbox" name="consis" id="signf">
+                        <label for="consis">Consistência e padrões</label><br>
+                        <input type="checkbox" name="prevenction" id="origin">
+                        <label for="prevenction">Prevenção de erros</label><br>
+                        <input type="checkbox" name="recognize" id="origin">
+                        <label for="recognize">Reconhecer ao invés de lembrar</label><br>
+                        <input type="checkbox" name="efici" id="origin">
+                        <label for="efici">Flexibilidade e Eficiência</label><br>
+                        <input type="checkbox" name="est&design" id="origin">
+                        <label for="est&design">Estética e Design minimalista</label><br>
+                        <input type="checkbox" name="erros" id="origin">
+                        <label for="erros">Ajude os usuários a reconhecerem, diagnosticarem e recuperarem-se de erros</label><br>
+                        <input type="checkbox" name="help" id="origin">
+                        <label for="help">Ajuda e documentação</label><br><br>
+                        <h4 style="text-align: left;">Deixe uma opinião :</h4>
+                        <textarea name="texto" placeholder="Escreva aqui sugetões de melhoria para o Website" style="width:500px; height:150px;background-color: rgb(228, 220, 220);"></textarea>
+                </fieldset>
+            </form>
         </section>
     </main>
 

@@ -6,6 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+#pright {
+  padding-right: 10px;
+}
+
 p {
   font-size: 14px;
 }
