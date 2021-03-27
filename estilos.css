@@ -69,11 +69,14 @@ footer {
 
   main ul {
     list-style-type: none;
-    border-right: grey 2px solid;
+  }
+
+  section {
+    border-bottom: rgb(175, 4, 4) 2px solid;
     line-height: 20px;
   }
 
-  main ul li a {
+  main section ul li a {
     text-decoration: none;
   }
 
