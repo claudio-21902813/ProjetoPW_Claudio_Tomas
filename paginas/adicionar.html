@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../estilos.css">
     <meta name="description" content="Tec News">
     <meta name="keywords" content="HTML,Web,Noticias">
-    <meta name="author" content="Claudio Caetano">
-    <meta name="author" content="Tomas Maia">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -51,39 +49,76 @@
             <h1>Adicionar Noticia</h1>
             <form>
                 <fieldset style="text-align: left;">
-                    <legend><h3>Dados Pessoais</h3></legend><br>
+                    <legend>
+                        <h3>Dados Pessoais</h3>
+                    </legend><br>
                     <label id="pright">Nome :</label>
                     <input type="text" name="nome" size="20" autocomplete="off" required autofocus></p><br>
-                    <label id="pright">Email :</label> 
+                    <label id="pright">Email :</label>
                     <input type="email" name="email" autocomplete="off" autofocus></p><br>
-                    </fieldset><br><br>
+                </fieldset><br><br>
                 <fieldset style="text-align: left;">
-                    <legend><h3>Campo relativo á noticia</h3></legend><br>
-                        <label id="pright"> Tipo : </label>
-                        <input type="radio" name="windowns" id="wind">
-                        <label for="wind" id="pright">Windows</label>
-                        <input type="radio" name="linux" id="linux">
-                        <label for="linux" id="pright">Linux</label>
-                        <input type="radio" name="android" id="android">
-                        <label for="android" id="pright">Android</label>
-                        <input type="radio" name="apple" id="apple">
-                        <label for="apple" id="pright">Apple</label><br><br>
-                        <label id="pright">Suporte Visual</label>
-                        <input type="url" name="url" placeholder ="Link(Url)"><br><br>
-                        <h4 style="text-align: left;">Sinopse :</h4><br>
-                        <textarea name="texto" rows="10" placeholder="Dê um pequeno resumo da noticia" cols="100" style="width:600px; height:100px;background-color: rgb(228, 220, 220);"></textarea>
-                        <br><br><h4 style="text-align: left;">Descreva a em 500 palavras noticia :</h4><br>
-                        <textarea name="texto" maxlength="500" rows="10" placeholder="Seja o mais claro e simples possivel" cols="100" style="width:600px; height:150px;background-color: rgb(228, 220, 220);"></textarea>
+                    <legend>
+                        <h3>Campo relativo á noticia</h3>
+                    </legend><br>
+                    <label id="pright"> Tipo : </label>
+                    <input type="radio" name="windowns" id="wind">
+                    <label for="wind" id="pright">Windows</label>
+                    <input type="radio" name="linux" id="linux">
+                    <label for="linux" id="pright">Linux</label>
+                    <input type="radio" name="android" id="android">
+                    <label for="android" id="pright">Android</label>
+                    <input type="radio" name="apple" id="apple">
+                    <label for="apple" id="pright">Apple</label><br><br>
+                    <label id="pright">Suporte Visual</label>
+                    <input type="url" name="url" placeholder="Link(Url)"><br><br>
+                    <h4 style="text-align: left;">Sinopse :</h4><br>
+                    <textarea name="texto" rows="10" placeholder="Dê um pequeno resumo da noticia" cols="100"
+                        style="width:600px; height:100px;background-color: rgb(228, 220, 220);"></textarea>
+                    <br><br>
+                    <h4 style="text-align: left;">Descreva a em 500 palavras noticia :</h4><br>
+                    <textarea name="texto" maxlength="500" rows="10" placeholder="Seja o mais claro e simples possivel"
+                        cols="100" style="width:600px; height:150px;background-color: rgb(228, 220, 220);"></textarea>
                 </fieldset>
             </form>
         </section>
     </main>
 
     <aside>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hwnP6WSmGhA" title="YouTube video player"
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/hwnP6WSmGhA" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+
+        <!-- formulario-->
+        <form>
+            <label>
+                Email para notificações
+                <input type="text">
+            </label><br>
+            <input id="botaoSubmit" type="submit">
+        </form>
+        <!-- Mais recentes-->
+        <ul>
+            <p>Noticias mais recentes:</p><br>
+            <li> <a
+                    href="https://pplware.sapo.pt/microsoft/windows/dica-pesquisar-por-imagens-no-windows-10-siga-estes-passos/">
+                    Pesquisade imagens windows</a></li>
+            <li> <a
+                    href="https://pplware.sapo.pt/truques-dicas/dica-como-saber-o-historico-das-atualizacoes-do-windows-10-rapidamente/">
+                    Historico de atualizacoes</a>
+            </li>
+            <li> <a href="https://pplware.sapo.pt/linux/systemrescuecd-8-0-o-linux-que-pode-salvar-o-windows/">teste
+                    ferramenta Linux SystemRescueCD</a></li>
+            <li> <a
+                    href="https://pplware.sapo.pt/smartphones-tablets/procura-um-iphone-12-iservices-ja-vende-recondicionados/">
+                    Iphone 12 - Iservices
+                </a>
+            </li>
+        </ul>
+
+        </ul>
+        </ul>
     </aside>
 
     <footer>

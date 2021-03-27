@@ -8,12 +8,39 @@
     <link rel="stylesheet" href="../estilos.css">
     <meta name="description" content="Tec News">
     <meta name="keywords" content="HTML,Web,Noticias">
-    <meta name="author" content="Claudio Caetano">
-    <meta name="author" content="Tomas Maia">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+
+    <style>
+        aside ul {
+            list-style-type: none;
+            line-height: 20px;
+        }
+
+        aside ul a {
+            display: inline-block;
+            padding: 15px 10px;
+            width: 100%;
+            text-decoration: none;
+            white-space: nowrap;
+            color: rgb(74, 62, 241);
+            border-top: aqua 2px solid;
+        }
+
+        aside ul a:hover {
+            background-color: #69c;
+        }
+
+        #botaoSubmit {
+            width: 330px;
+            height: 25px;
+            border-right: seagreen 2px solid;
+            box-shadow: 2px 2px 5px black;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -46,17 +73,109 @@
         </nav>
     </header>
 
-    <main style="padding-top: 15px;">
+    <main style="padding-top: 2%;">
         <section>
             <h1>Noticias Windows</h1>
+            <br>
+            <hr>
+            <br>
+            <ul>
+                <article>
+                    <li>
+                        <a
+                            href="https://pplware.sapo.pt/truques-dicas/dica-como-saber-o-historico-das-atualizacoes-do-windows-10-rapidamente/">
+                            <h2>Dica: Como saber o histórico das atualizações do Windows 10 rapidamente</h2>
+                            <br>
+                            <hr>
+                            <p>Autor: XXX-YYY-ZZZ & Data:27/03/2021</p>
+                            <hr>
+                            <br>
+                            <picture>
+                                <source srcset="../imagens/windows_imagem_phone.jpg" media="(max-width: 600px)">
+                                <source srcset="../imagens/windows_imagem1.jpg" media="(max-width: 1500px)">
+                                <img src="../imagens/windows_imagem1.jpg">
+                            </picture>
+                            <br>
+                            <p>
+                                Ao longo dos anos, e se tudo correr bem, o Windows 10 vai recebendo atualizações.
+                                <br> Estas
+                                trazem as esperadas melhorias e correções de problemas. Claro que associado estão também
+                                as
+                                novidades e funcionalidades melhoradas.
+                            </p>
+                        </a>
+                    </li>
+                </article>
+                <br>
+                <hr>
+                <br>
+
+                <article>
+                    <li>
+                        <a
+                            href="https://pplware.sapo.pt/microsoft/windows/dica-pesquisar-por-imagens-no-windows-10-siga-estes-passos/">
+                            <h2>Pesquisar por imagens no Windows 10? Siga estes passos</h2>
+                            <br>
+                            <hr>
+                            <p>Autor: XXX-YYY-ZZZ & Data:27/03/2021</p>
+                            <hr>
+                            <br>
+
+                            <picture>
+                                <source srcset="../imagens/surface_img_phone.jpg" media="(max-width: 600px)">
+                                <source srcset="../imagens/surface_imagem.jpg" media="(max-width: 1500px)">
+                                <img src="../imagens/surface_imagem.jpg">
+                            </picture>
+                            <br>
+                            <p>
+                                Uma das mais recentes permite fazer pesquisas de imagens dentro do Windows 10, sem
+                                instalar
+                                nenhuma app ou outra funcionalidade.<br> Esta é muito simples de usar e muito útil, para
+                                ajudar
+                                o utilizador em qualquer momento.
+                            </p>
+                        </a>
+                    </li>
+                </article>
+            </ul>
         </section>
     </main>
 
     <aside>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hwnP6WSmGhA" title="YouTube video player"
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/hwnP6WSmGhA" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+
+        <!-- formulario-->
+        <form>
+            <label>
+                Email para notificações
+                <input type="text">
+            </label><br>
+            <input id="botaoSubmit" type="submit">
+        </form>
+        <!-- Mais recentes-->
+        <ul>
+            <p>Noticias mais recentes:</p><br>
+            <li> <a
+                    href="https://pplware.sapo.pt/microsoft/windows/dica-pesquisar-por-imagens-no-windows-10-siga-estes-passos/">
+                    Pesquisade imagens windows</a></li>
+            <li> <a
+                    href="https://pplware.sapo.pt/truques-dicas/dica-como-saber-o-historico-das-atualizacoes-do-windows-10-rapidamente/">
+                    Historico de atualizacoes</a>
+            </li>
+            <li> <a href="https://pplware.sapo.pt/linux/systemrescuecd-8-0-o-linux-que-pode-salvar-o-windows/">teste
+                    ferramenta Linux SystemRescueCD</a></li>
+            <li> <a
+                    href="https://pplware.sapo.pt/smartphones-tablets/procura-um-iphone-12-iservices-ja-vende-recondicionados/">
+                    Iphone 12 - Iservices
+                </a>
+            </li>
+        </ul>
+
+        </ul>
+        </ul>
     </aside>
 
     <footer>
