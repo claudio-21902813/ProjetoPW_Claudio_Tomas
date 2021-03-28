@@ -12,6 +12,44 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <style>
+        section{
+            border-bottom: white solid;
+        }
+        ::placeholder{
+            text-align: center;
+        }
+        textarea{
+            width:600px;
+            background-color: rgb(140, 232, 248);
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .button {
+            background-color: #33D4FF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            border: none;
+            border-radius: 15px;
+            box-shadow: -8px 8px rgb(27, 26, 26);
+        }
+
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    </style>
 </head>
 
 <body>
@@ -47,39 +85,44 @@
     <main style="padding-top: 70px;">
         <section>
             <h1>Adicionar Noticia</h1>
-            <form>
-                <fieldset style="text-align: left;">
+            <form id="form1" method="post" action="mailto:offe.games@gmail.com">
+                <fieldset style="text-align: left;padding-left: 10px;">
                     <legend>
-                        <h3>Dados Pessoais 2</h3>
+                        <h3>Dados Pessoais</h3>
                     </legend><br>
                     <label id="pright">Nome :</label>
-                    <input type="text" name="nome" size="20" autocomplete="off" required autofocus></p><br>
+                    <input type="text" name="nome" size="20" autocomplete="off" placeholder="nome" required autofocus></p><br>
                     <label id="pright">Email :</label>
-                    <input type="email" name="email" autocomplete="off" autofocus></p><br>
+                    <input type="email" name="email" autocomplete="off" placeholder="xxx@gmail.com" autofocus></p><br>
                 </fieldset><br><br>
-                <fieldset style="text-align: left;">
+                <fieldset style="text-align: left;padding-left: 10px;">
                     <legend>
                         <h3>Campo relativo á noticia</h3>
                     </legend><br>
                     <label id="pright"> Tipo : </label>
-                    <input type="radio" name="windowns" id="wind">
+                    <input type="radio" name="tipo" id="wind">
                     <label for="wind" id="pright">Windows</label>
-                    <input type="radio" name="linux" id="linux">
+                    <input type="radio" name="tipo" id="linux">
                     <label for="linux" id="pright">Linux</label>
-                    <input type="radio" name="android" id="android">
+                    <input type="radio" name="tipo" id="android">
                     <label for="android" id="pright">Android</label>
-                    <input type="radio" name="apple" id="apple">
-                    <label for="apple" id="pright">Apple</label><br><br>
-                    <label id="pright">Suporte Visual</label>
+                    <input type="radio" name="tipo" id="apple">
+                    <label for="apple">Apple</label><br><br>
+                    <label id="pright">Suporte Visual :</label>
                     <input type="url" name="url" placeholder="Link(Url)"><br><br>
-                    <h4 style="text-align: left;">Sinopse :</h4><br>
-                    <textarea name="texto" rows="10" placeholder="Dê um pequeno resumo da noticia" cols="100"
-                        style="width:600px; height:100px;background-color: rgb(228, 220, 220);"></textarea>
+                    <h4 style="text-align: left;">Sinopse :</h4>
+                    <section style="padding-left: 90px;padding-top: 10px;">
+                        <textarea name="texto" rows="10" placeholder="Dê um pequeno resumo da noticia" cols="100"
+                        style="height:100px;"></textarea>
+                    </section>
                     <br><br>
-                    <h4 style="text-align: left;">Descreva a em 500 palavras noticia :</h4><br>
-                    <textarea name="texto" maxlength="500" rows="10" placeholder="Seja o mais claro e simples possivel"
-                        cols="100" style="width:600px; height:150px;background-color: rgb(228, 220, 220);"></textarea>
+                    <h4 style="text-align: left;">Descreva, em 500 palavras, a noticia :</h4>
+                    <section style="padding-left: 90px;padding-top: 10px;">
+                        <textarea name="texto" maxlength="500" rows="10" placeholder="Seja o mais claro e simples possivel"
+                        cols="100" style="height:150px;"></textarea>
+                    </section>
                 </fieldset>
+                <input type="submit" value="Enviar" class="button button2" form="form1">
             </form>
         </section>
     </main>
@@ -101,21 +144,23 @@
         <!-- Mais recentes-->
         <ul>
             <p>Noticias mais recentes:</p><br>
-            <li> <a style="color:white"
+            <li> <a
                     href="https://pplware.sapo.pt/microsoft/windows/dica-pesquisar-por-imagens-no-windows-10-siga-estes-passos/">
                     Pesquisade imagens windows</a></li>
-            <li> <a style="color:white"
+            <li> <a
                     href="https://pplware.sapo.pt/truques-dicas/dica-como-saber-o-historico-das-atualizacoes-do-windows-10-rapidamente/">
                     Historico de atualizacoes</a>
             </li>
-            <li> <a style="color:white"
-                    href="https://pplware.sapo.pt/linux/systemrescuecd-8-0-o-linux-que-pode-salvar-o-windows/">teste
+            <li> <a href="https://pplware.sapo.pt/linux/systemrescuecd-8-0-o-linux-que-pode-salvar-o-windows/">teste
                     ferramenta Linux SystemRescueCD</a></li>
-            <li> <a style="color:white"
+            <li> <a
                     href="https://pplware.sapo.pt/smartphones-tablets/procura-um-iphone-12-iservices-ja-vende-recondicionados/">
                     Iphone 12 - Iservices
                 </a>
             </li>
+        </ul>
+
+        </ul>
         </ul>
     </aside>
 
