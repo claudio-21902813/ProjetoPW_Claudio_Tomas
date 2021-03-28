@@ -13,19 +13,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <style>
-        section{
-            border-bottom: white solid;
-        }
-        ::placeholder{
+        ::placeholder {
             text-align: center;
         }
-        textarea{
-            width:600px;
+
+        textarea {
+            width: 600px;
             background-color: rgb(140, 232, 248);
             border-top-right-radius: 40px;
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
         }
+
         .button {
             background-color: #33D4FF;
             border: none;
@@ -47,7 +46,16 @@
         }
 
         .button2:hover {
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        main {
+            grid-area: main;
+            grid-column: 1 / span 2;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            background-color: white;
+            padding-top: 70px;
         }
     </style>
 </head>
@@ -82,18 +90,23 @@
         </nav>
     </header>
 
-    <main style="padding-top: 70px;">
+    <main>
         <section>
             <h1>Adicionar Noticia</h1>
-            <form id="form1" method="post" action="mailto:offe.games@gmail.com">
+            <form id="form1" method="post" action="mailto:a21904341@alunos.ulht.pt">
                 <fieldset style="text-align: left;padding-left: 10px;">
                     <legend>
                         <h3>Dados Pessoais</h3>
                     </legend><br>
                     <label id="pright">Nome :</label>
-                    <input type="text" name="nome" size="20" autocomplete="off" placeholder="nome" required autofocus></p><br>
+                    <input type="text" name="nome" size="20" autocomplete="off" placeholder="nome" required autofocus>
+                    </p><br>
                     <label id="pright">Email :</label>
-                    <input type="email" name="email" autocomplete="off" placeholder="xxx@gmail.com" autofocus></p><br>
+                    <input type="email" name="email" autocomplete="off" placeholder="xxx@gmail.com" required autofocus>
+                    </p><br>
+                    <label id="pright">Telemóvel :</label>
+                    <input type="tel" name="telemóvel" size="15" placeholder="número"></p>
+                    <br>
                 </fieldset><br><br>
                 <fieldset style="text-align: left;padding-left: 10px;">
                     <legend>
@@ -113,15 +126,17 @@
                     <h4 style="text-align: left;">Sinopse :</h4>
                     <section style="padding-left: 90px;padding-top: 10px;">
                         <textarea name="texto" rows="10" placeholder="Dê um pequeno resumo da noticia" cols="100"
-                        style="height:100px;"></textarea>
+                            style="height:100px;" required></textarea>
                     </section>
                     <br><br>
                     <h4 style="text-align: left;">Descreva, em 500 palavras, a noticia :</h4>
                     <section style="padding-left: 90px;padding-top: 10px;">
-                        <textarea name="texto" maxlength="500" rows="10" placeholder="Seja o mais claro e simples possivel"
-                        cols="100" style="height:150px;"></textarea>
+                        <textarea name="texto" maxlength="500" rows="10"
+                            placeholder="Seja o mais claro e simples possivel" cols="100" style="height:150px;"
+                            required></textarea>
                     </section>
                 </fieldset>
+                <input type="reset" value="Reset" class="button button2" form="form1">
                 <input type="submit" value="Enviar" class="button button2" form="form1">
             </form>
         </section>

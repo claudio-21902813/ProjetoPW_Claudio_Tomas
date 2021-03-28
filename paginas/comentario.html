@@ -13,26 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <style>
-        #regras{
+        #regras {
             padding-left: 30px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
         }
-        section{
-            border-bottom: white solid;
-        }
-        ::placeholder{
+
+        ::placeholder {
             text-align: center;
         }
-        textarea{
-            width:500px;
-            height:150px;
+
+        textarea {
+            width: 500px;
+            height: 150px;
             background-color: rgb(140, 232, 248);
             border-top-right-radius: 40px;
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
         }
+
         .button {
             background-color: #33D4FF;
             border: none;
@@ -54,7 +54,7 @@
         }
 
         .button2:hover {
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
     </style>
 </head>
@@ -96,7 +96,8 @@
             <h1>Comente e deixe-nos felizes!</h1><br>
             <h3>Dê-nos um comentário sobre o nosso Website de forma a poder-mos sempre melhorar e dar mais prazer de se
                 ver</h3><br>
-            <form oninput="cont.value=parseInt(conteudo.value)" method="post" action="mailto:offe.games@gmail.com" id="form1">
+            <form oninput="cont.value=parseInt(conteudo.value)" method="post" action="mailto:a21904341@alunos.ulht.pt"
+                id="form1">
                 <fieldset style="text-align: left;padding-left: 10px;">
                     <legend>
                         <h3>Dê a sua opinião sobre o Website</h3>
@@ -114,56 +115,60 @@
                     <input type="radio" name="estetica" id="mtbom">
                     <label for="mtbom">5</label><br><br>
                     <label id="pright">Conteúdo :</label>
-                    <input type="range" name="conteudo" min="0" max="10">
+                    <input type="range" name="conteudo" min="0" max="10" required>
                     <output name="cont">5</output><br><br>
-                    <h4 style="text-align: left;">O site teve em conta as 10 heurísticas de Nielsen? (multi-opções) :</h4><br>
+                    <h4 style="text-align: left;">O site teve em conta as 10 heurísticas de Nielsen? (multi-opções) :
+                    </h4><br>
                     <section id="regras">
-                    <section>
-                        <input type="checkbox" name="visi">
-                        <label for="visi">Visibilidade do status do sistema</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="corr" id="amplitude">
-                        <label for="corr">Correspondência entre o sistema e o mundo real</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="liberdade" id="logic">
-                        <label for="liberdade">Liberdade e controle do usuário</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="consis" id="signf">
-                        <label for="consis">Consistência e padrões</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="prevenction" id="origin">
-                        <label for="prevenction">Prevenção de erros</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="recognize" id="origin">
-                        <label for="recognize">Reconhecer ao invés de lembrar</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="efici" id="origin">
-                        <label for="efici">Flexibilidade e Eficiência</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="est&design" id="origin">
-                        <label for="est&design">Estética e Design minimalista</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="erros" id="origin">
-                        <label for="erros">Ajude os usuários a reconhecerem, diagnosticarem e recuperarem-se de erros</label><br>
-                    </section>
-                    <section>
-                        <input type="checkbox" name="help" id="origin">
-                        <label for="help">Ajuda e documentação</label><br><br>
-                    </section>
+                        <section>
+                            <input type="checkbox" name="visi">
+                            <label for="visi">Visibilidade do status do sistema</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="corr" id="amplitude">
+                            <label for="corr">Correspondência entre o sistema e o mundo real</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="liberdade" id="logic">
+                            <label for="liberdade">Liberdade e controle do usuário</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="consis" id="signf">
+                            <label for="consis">Consistência e padrões</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="prevenction" id="origin">
+                            <label for="prevenction">Prevenção de erros</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="recognize" id="origin">
+                            <label for="recognize">Reconhecer ao invés de lembrar</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="efici" id="origin">
+                            <label for="efici">Flexibilidade e Eficiência</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="est&design" id="origin">
+                            <label for="est&design">Estética e Design minimalista</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="erros" id="origin">
+                            <label for="erros">Ajude os usuários a reconhecerem, diagnosticarem e recuperarem-se de
+                                erros</label><br>
+                        </section>
+                        <section>
+                            <input type="checkbox" name="help" id="origin">
+                            <label for="help">Ajuda e documentação</label><br><br>
+                        </section>
                     </section>
                     <h4 style="text-align: left;">Deixe uma opinião :</h4>
                     <section style="padding-left: 90px;padding-top: 10px;">
-                        <textarea name="texto" placeholder="Escreva aqui sugetões de melhoria para o Website"></textarea>
+                        <textarea name="texto"
+                            placeholder="Escreva aqui sugetões de melhoria para o Website"></textarea>
                     </section>
                 </fieldset>
+                <input type="reset" value="Reset" class="button button2" form="form1">
                 <input type="submit" value="Enviar" class="button button2" form="form1">
             </form>
         </section>
