@@ -56,6 +56,10 @@
             text-align: center;
             background-color: white;
             padding-top: 70px;
+            background-image: url("../imagens/news_img.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-overflow: clip;
         }
     </style>
 </head>
@@ -65,6 +69,10 @@
     <header>
         <figure>
             <img src="../imagens/header_imagem.svg">
+        </figure>
+
+        <figure class="imagemDecorada">
+            <img src="../imagens/imagemCool.jpg">
         </figure>
         <nav>
             <ul>
@@ -136,8 +144,10 @@
                             required></textarea>
                     </section>
                 </fieldset>
-                <input type="reset" value="Reset" class="button button2" form="form1">
-                <input type="submit" value="Enviar" class="button button2" form="form1">
+                <section class="botoes">
+                    <input type="reset" value="Reset" class="button button2" form="form1">
+                    <input type="submit" value="Enviar" class="button button2" form="form1">
+                </section>
             </form>
         </section>
     </main>
