@@ -270,12 +270,14 @@ footer {
   nav {
     grid-area: nav;
     background-color: #da532c;
+    width: 100%;
   }
 
   main {
     grid-area: main;
     background-color: rgb(255, 255, 255);
     padding-top: 150px;
+    width: 100%;
   }
   aside {
     grid-area: aside;
@@ -284,15 +286,20 @@ footer {
     width: 100%;
   }
 
+  iframe {
+    width: 100%;
+    padding: 10px 10px;
+  }
   footer {
     grid-area: footer;
+    width: 100%;
   }
   body {
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "header"
       "nav"
@@ -301,7 +308,6 @@ footer {
       "footer";
     font-size: 5vw;
     color: rgba(44, 43, 43, 0.986);
-    padding-top: 17px;
   }
   nav ul {
     list-style-type: none;
