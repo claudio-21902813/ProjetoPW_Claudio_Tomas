@@ -12,34 +12,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-
-    <style>
-        .figura {
-            transition: transform .2s;
-        }
-
-        .figura:hover {
-            transform: scale(1.5);
-        }
-
-        .tabela {
-            border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 0.9em;
-            font-family: sans-serif;
-            min-width: 400px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-            border: 1px solid red;
-        }
-
-        tbody tr {
-            border: 1px solid red;
-        }
-
-        thead th {
-            border: 1px solid red;
-        }
-    </style>
 </head>
 
 <body>
@@ -82,15 +54,22 @@
 
 
         <section>
+
             <h4>Mapa do website</h4>
+            <hr>
 
             <figure class="figura">
                 <a href=""><img src="../imagens/mapaWebsite.png"></a>
             </figure>
-            <hr>
+
+            <section class="space"></section>
             <h4>Layouts</h4>
             <hr>
+            <section class="space"></section>
+
+
             <h4>Tabela Inventario</h4>
+            <hr>
             <table class="tabela">
                 <caption>Tabela Inventario</caption>
                 <thead>
@@ -126,74 +105,83 @@
                     </tr>
                 </tbody>
             </table>
-            <hr>
+            <section class="space"></section>
             <h4>Técnicas usadas</h4>
-            <table>
-                <thead>
+            <hr>
+            <section style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Carateristicas</th>
+                            <th>Elementos/técnicas</th>
+                            <th>Exemplos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Layouts</td>
+                            <td>Usou-se o CSS grid e CSS flexbox para construção de layouts</td>
+                            <td>O CSS Grid foi usado para a construção do layout da pagina,
+                                e o flexbox foi usado para organizar os elementos da forma que era
+                                suposto
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Responsividade</td>
+                            <td>Foram usadas media queries que adaptam o layout para telemovel e PC consoante o tamanho
+                                da
+                                janela do browser.</td>
+                            <td>
+                                Para PC, foi usada este layout com um media querie no minimo de 601 px
+                                <figure>
+                                    <img src="../imagens/menuPc.png">
+                                </figure>
+                                Para Mobile, foi usada este layout com um media querie no maximo de 600 px
+                                <figure>
+                                    <img src="../imagens/menuMobile.png">
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Seletores</td>
+                            <td>Foram usados os tipos de seletores: universal, tipo, classe, id, pseudo-class,
+                                pseudo-elemento</td>
+                            <td>Na area de navegação, foi usado o :hover para quando o cursos passar por cima do
+                                elemento
+                                , ser possivel mudar a cor de fundo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Etiquetas</td>
+                            <td>HTML5 main, header, article, footer, figure,iframe,body, nav , section,article
+                                ,p,h,table,thead,tbody,form,fieldset,input,label,ul,li,a,aside,svg,image,
+                                html,figcaption,caption,legend,br,hr,picture
+                            </td>
+                            <td>Exemplos</td>
+                        </tr>
+                    </tbody>
                     <tr>
-                        <th>Carateristicas</th>
-                        <th>Elementos/técnicas</th>
-                        <th>Exemplos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Layouts</td>
-                        <td>Usou-se o CSS grid e CSS flexbox para construção de layouts</td>
-                        <td>O CSS Grid foi usado para a construção do layout da pagina,
-                            e o flexbox foi usado para organizar os elementos da forma que era
-                            suposto
+                        <td>Animações</td>
+                        <td>Foram feitas animações usando keyframes que permite "dar vida" a elementos
+                            no website
+                        </td>
+                        <td>Foi usado por exemplo, para dar um zoom no texto quando se passava o cursor,
+                            e tambem na pagina Inicial.
                         </td>
                     </tr>
-                    <tr>
-                        <td>Responsividade</td>
-                        <td>Foram usadas media queries que adaptam o layout para telemovel e PC consoante o tamanho da
-                            janela do browser.</td>
-                        <td>
-                            Para PC, foi usada este layout com um media querie no minimo de 601 px
-                            <figure>
-                                <img src="../imagens/menuPc.png">
-                            </figure>
-                            Para Mobile, foi usada este layout com um media querie no maximo de 600 px
-                            <figure>
-                                <img src="../imagens/menuMobile.png">
-                            </figure>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Seletores</td>
-                        <td>Foram usados os tipos de seletores: universal, tipo, classe, id, pseudo-class,
-                            pseudo-elemento</td>
-                        <td>Na area de navegação, foi usado o :hover para quando o cursos passar por cima do elemento
-                            , ser possivel mudar a cor de fundo
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Etiquetas</td>
-                        <td>HTML5 main, header, article, footer, figure,iframe,body, nav , section,article
-                            ,p,h,table,thead,tbody,form,fieldset,input,label,ul,li,a,aside,svg,image,
-                            html,figcaption,caption,legend,br,hr,picture
-                        </td>
-                        <td>Exemplos</td>
-                    </tr>
-                </tbody>
-                <tr>
-                    <td>Animações</td>
-                    <td>Foram feitas animações usando keyframes que permite "dar vida" a elementos
-                        no website
-                    </td>
-                    <td>Foi usado por exemplo, para dar um zoom no texto quando se passava o cursor,
-                        e tambem na pagina Inicial.
-                    </td>
-                </tr>
-            </table>
+                </table>
+            </section>
+            <section class="space"></section>
 
             <h4> Video de apresentação</h4>
+            <hr>
+            <br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ZG1wfauSlzY"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </section>
+        <section class="space"></section>
 
 
     </main>
