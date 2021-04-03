@@ -28,7 +28,7 @@
             <ul>
                 <li><a href="../index.html" class="home">Home</a></li>
                 <li>
-                    <a href="windowsNews.html" class="categoria">Categorias </a>
+                    <a href="#" class="categoria">Categorias </a>
                     <ul>
                         <li><a href="appleNews.html" class="apple">Apple</a></li>
                         <li><a href="linuxNews.html" class="linux">Linux</a></li>
@@ -37,7 +37,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="comentario.html" class="others"> Outros </a>
+                    <a href="#" class="others"> Outros </a>
                     <ul>
                         <li><a href="comentario.html" class="comments">Comentario</a></li>
                         <li><a href="adicionar.html" class="sugestNews">Noticia</a></li>
@@ -50,20 +50,20 @@
 
 
 
-    <main style="padding-top: 25px;">
-
-
+    <main>
         <section>
-
-            <h4>Mapa do website</h4>
+            <h3>Mapa do website</h3>
             <hr><br><br>
 
             <figure class="figura">
-                <a href=""><img src="../imagens/mapaWebsite.png"></a>
+                <source srcset="../imagens/mapaWebsite_phone.png" media="(max-width: 600px)">
+                <source srcset="../imagens/mapaWebsite.png" media="(max-width: 1500px)">
+                <img src="../imagens/mapaWebsite_phone.png">
+                <!-- <a href=""><img src="../imagens/mapaWebsite.png"></a>-->
             </figure>
             <br><br>
             <hr><br><br>
-            <h4>Layouts</h4>
+            <h3>Layouts</h3>
             <hr><br><br>
             <section class="layout">
                 <article>
@@ -82,6 +82,8 @@
                     }<br>
                     ...<br>
                     <figure>
+                        <source srcset="/imagens/menuPc_mobile.png" media="(max-width: 600px)">
+                        <source srcset="/imagens/menuPc.png" media="(max-width: 1500px)">
                         <img src="../imagens/menuPc.png">
                     </figure>
                 </article>
@@ -105,7 +107,7 @@
                 </article>
             </section><br><br>
             <hr><br><br>
-            <h4>Tabela Inventario</h4>
+            <h3>Tabela Inventario</h3>
             <hr><br><br>
             <section class="div1">
                 <table class="tabela">
@@ -144,7 +146,7 @@
                 </table>
             </section><br><br>
             <hr><br><br>
-            <h4>Técnicas usadas</h4>
+            <h3>Técnicas usadas</h3>
             <hr><br><br>
             <section style="overflow-x:auto;">
                 <section class="div3">
@@ -275,7 +277,7 @@
                 </section>
             </section><br><br>
             <hr><br><br>
-            <h4> Video de apresentação</h4>
+            <h3> Video de apresentação</h3>
             <hr><br><br>
             <br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ZG1wfauSlzY"
@@ -304,6 +306,9 @@
             </label><br>
             <input id="botaoSubmit" type="submit">
         </form>
+        <figure class="imagemDecorada2">
+            <img src="../imagens/imagemCool2.jpg">
+        </figure>
         <!-- Mais recentes-->
         <ul>
             <p>Noticias mais recentes:</p><br>

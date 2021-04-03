@@ -41,7 +41,7 @@
             <ul>
                 <li><a href="../index.html" class="home">Home</a></li>
                 <li>
-                    <a href="windowsNews.html" class="categoria">Categorias </a>
+                    <a href="#" class="categoria">Categorias </a>
                     <ul>
                         <li><a href="appleNews.html" class="apple">Apple</a></li>
                         <li><a href="linuxNews.html" class="linux">Linux</a></li>
@@ -50,7 +50,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="comentario.html" class="others"> Outros </a>
+                    <a href="#" class="others"> Outros </a>
                     <ul>
                         <li><a href="comentario.html" class="comments">Comentario</a></li>
                         <li><a href="adicionar.html" class="sugestNews">Noticia</a></li>
@@ -62,24 +62,40 @@
     </header>
 
     <main>
-        <section>
+        <section class="paddForm">
             <h1>Adicionar Noticia</h1>
             <form id="form1" method="post" action="mailto:a21904341@alunos.ulht.pt">
-                <fieldset style="text-align: left;padding-left: 10px;">
+                <fieldset id="field_1">
+
                     <legend>
                         <h3>Dados Pessoais</h3>
                     </legend><br>
-                    <label id="pright">Nome :</label>
-                    <input type="text" name="nome" size="20" autocomplete="off" placeholder="nome" required autofocus>
-                    </p><br>
-                    <label id="pright">Email :</label>
-                    <input type="email" name="email" autocomplete="off" placeholder="xxx@gmail.com" required autofocus>
-                    </p><br>
-                    <label id="pright">Telemóvel :</label>
-                    <input type="tel" name="telemóvel" size="15" placeholder="número"></p>
+                    <table>
+                        <tr>
+                            <td><label id="pright">Nome :</label></td>
+                            <td> <input type="text" name="nome" size="20" autocomplete="off" placeholder="nome" required
+                                    autofocus></td>
+                        </tr>
+
+                        <tr>
+                            <td><label id="pright">Email :</label></td>
+                            <td> <input type="email" name="email" autocomplete="off" placeholder="xxx@gmail.com"
+                                    required autofocus>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label id="pright">Telemóvel :</label></td>
+                            <td> <input type="tel" name="telemóvel" size="20" placeholder="número">
+                            </td>
+                        </tr>
+
+                    </table>
                     <br>
-                </fieldset><br><br>
-                <fieldset style="text-align: left;padding-left: 10px;">
+                </fieldset>
+                <br>
+                <br>
+                <fieldset id="field_1">
                     <legend>
                         <h3>Campo relativo á noticia</h3>
                     </legend><br>
@@ -95,13 +111,13 @@
                     <label id="pright">Suporte Visual :</label>
                     <input type="url" name="url" placeholder="Link(Url)"><br><br>
                     <h4 style="text-align: left;">Sinopse :</h4>
-                    <section id="form_textArea_1">
+                    <section class="textArea_form1">
                         <textarea name="texto" rows="10" placeholder="Dê um pequeno resumo da noticia" cols="100"
                             style="height:100px;" required></textarea>
                     </section>
                     <br><br>
-                    <h4 style="text-align: left;">Descreva, em 500 palavras, a noticia :</h4>
-                    <section style="padding-left: 90px;padding-top: 10px;">
+                    <h4>Descreva, em 500 palavras, a noticia :</h4>
+                    <section class="textArea_form1">
                         <textarea name="texto" maxlength="500" rows="10"
                             placeholder="Seja o mais claro e simples possivel" cols="100" style="height:150px;"
                             required></textarea>
@@ -129,6 +145,9 @@
             </label><br>
             <input id="botaoSubmit" type="submit">
         </form>
+        <figure class="imagemDecorada2">
+            <img src="../imagens/imagemCool2.jpg">
+        </figure>
         <!-- Mais recentes-->
         <ul>
             <p>Noticias mais recentes:</p><br>
