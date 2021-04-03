@@ -305,6 +305,20 @@ footer {
     border: 1px solid burlywood;
     padding: 10px 19px;
   }
+
+  .layout {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .div1 {
+    display: flex;
+    justify-content: center;
+  }
+  .div3 {
+    padding: 60px 60px;
+  }
 }
 
 /* Para Mobile */
