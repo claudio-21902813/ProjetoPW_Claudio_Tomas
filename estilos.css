@@ -5,6 +5,31 @@
   font-family: "Roboto", sans-serif;
 }
 
+@keyframes header_anim {
+  25% {
+    background-color: #da532c;
+    opacity: 0.9;
+  }
+
+  50% {
+    background-image: linear-gradient(to left, black, #da532c);
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header_animacao {
+  animation-name: header_anim;
+  animation-duration: 5s;
+}
+
 #pright {
   padding-right: 10px;
 }
