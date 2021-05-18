@@ -8,13 +8,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Noticas Tec</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    {% load static %}
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/imagens/icon.svg' %}" />
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'website/css/estilos.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/icon.svg" />
+    <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+
     <style>
         #botaoSubmit {
             width: 330px;
@@ -54,13 +53,11 @@
 
     <header>
         <figure class="header_animacao">
-            {% load static %}
-            <img src="{% static 'website/imagens/header_imagem.svg' %}">
+            <img src="imagens/header_imagem.svg">
         </figure>
 
         <figure class="imagemDecorada">
-            {% load static %}
-            <img src="{% static 'website/imagens/imagemCool.jpg' %}">
+            <img src="imagens/imagemCool.jpg">
         </figure>
 
         <nav>
@@ -94,23 +91,19 @@
             <picture>
                 <section class="carrosel">
                     <section>
-                        {% load static %}
-                        <img src="{% static 'website/imagens/galeria/androidGaleria.jpg' %}">
-                        <img src="{% static 'website/imagens/galeria/linux.jpg' %}">
-                        <img src="{% static 'website/imagens/galeria/apple.jpg' %}">
+                        <img src="imagens/galeria/androidGaleria.jpg">
+                        <img src="imagens/galeria/linux.jpg">
+                        <img src="imagens/galeria/apple.jpg">
                     </section>
                     <br>
                     <section>
-                        {% load static %}
-                        <img src="{% static 'website/imagens/galeria/windows.jpg' %}">
-                        <img src="{% static 'website/imagens/galeria/ios.jpg' %}">
-                        <img src="{% static 'website/imagens/galeria/ps4.jpg' %}">
+                        <img src="imagens/galeria/windows.jpg">
+                        <img src="imagens/galeria/ios.jpg">
+                        <img src="imagens/galeria/ps4.jpg">
                     </section>
                 </section>
             </picture>
         </section>
-
-        <!--
         <section>
             <ul>
                 <article>
@@ -189,15 +182,9 @@
                     </li>
                 </article>
             </ul>
-<<<<<<< HEAD:tec_noticias/templates/website/index.html
-        </section>-->
-
-
-        <br>
-        <br>
-=======
         </section>
->>>>>>> parent of e6c1d1d... projeto - fix de bugs:index.html
+        <br>
+        <br>
     </main>
 
     <aside>
@@ -215,8 +202,7 @@
         </form>
         <!-- foto estilosa-->
         <figure class="imagemDecorada2">
-        {% load static %}
-        <img src="{% static 'website/imagens/imagemCool2.jpg' %}">
+            <img src="imagens/imagemCool2.jpg">
         </figure>
         <!-- Mais recentes-->
         <ul>
@@ -242,8 +228,7 @@
     <footer>
         <!-- Word cloud-->
         <svg width="500" height="300">
-            {% load static %}
-            <img src="{% static 'website/imagens/wordcloud.jpg' %}" width="100%" height="100%">
+            <image href="../imagens/wordcloud.jpg" width="100%" height="100%">
             </image>
             <!-- Outras Paginas-->
             <a href="index.html">
